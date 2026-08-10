@@ -58,7 +58,7 @@ hr {
     flex: 1;
 }
 
-/* Place sections - text left, image right horizontally */
+/* text left and  image on right */
 .place {
     display: flex;
     gap: 10px;
@@ -98,7 +98,10 @@ hr {
     display: block;
 }
 
-/* Responsive - on mobile, stack columns */
+
+
+
+
 @media (max-width: 700px) {
     body {
         padding: 10px;
