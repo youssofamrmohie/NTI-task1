@@ -58,20 +58,27 @@ hr {
     flex: 1;
 }
 
-/* text left and  image on right */
+/* text left and image on right with border */
 .place {
     display: flex;
     gap: 10px;
     align-items: center;
     margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #999;
+    padding: 10px 12px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #4a7c9e;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.place:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .place:last-child {
-    border-bottom: none;
     margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .place-text {
@@ -94,7 +101,7 @@ hr {
     height: 95px;
     object-fit: cover;
     border-radius: 4px;
-    border: 1px solid #aaa;
+    border: 1px solid #ccc;
     display: block;
 }
 
@@ -124,9 +131,10 @@ hr {
     }
 
     .place {
-        margin-bottom: 12px;
-        padding-bottom: 12px;
+        margin-bottom: 10px;
+        padding: 10px;
         gap: 10px;
+        flex-direction: row;
     }
 
     .place-image {
